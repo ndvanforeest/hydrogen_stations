@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "hydrogen-stations"
+version = "0.1.0"
+description = ""
+authors = ["Nicky van Foreest <vanforeest@gmail.com>", "Niels Wouda <wouda@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "hydrogen_stations"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^23.3.0"
+numpy = "^1.24.3"
+scikit-learn = "^1.2.2"
+osmium = "^3.6.0"
+folium = "^0.14.0"
+
+[tool.poetry.scripts]
+ingest = "stations.ingest:main"
+plot = "stations.plot_stations:main"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+case_sensitive = true
+line_length = 79
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
