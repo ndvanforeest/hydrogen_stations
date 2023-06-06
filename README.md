@@ -14,12 +14,14 @@ Update or get `poetry`, and then simply use `poetry install` from the repository
 
 The following programs are currently available:
 
-- `fill_database`, the ingestion script.
+- `ingest`, the ingestion script.
   This script ingests raw data files into an SQL database.
+- `plot`, the plotting script.
+  This script plots fuel and charging stations near trunks and motorways
 
 These programs can be ran as `poetry run <script name>`, for example:
 ```shell
-poetry run fill_database
+poetry run ingest
 ```
 
 Note that most programs depend on data available in the `/home/username/tmp/data/` directory.
