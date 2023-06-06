@@ -8,7 +8,7 @@ The code includes:
 
 ## Installation
 
-Update or get `poetry`, and then simply use `poetry install` from the repository root.
+Update or get `poetry`, and then simply use `poetry install` from the repository root. If this fails, which it did on my machine, run `poetry env use python3` first, to ensure that `poetry` does not think that the system environment is the active project environment.
 
 ## Programs
 
