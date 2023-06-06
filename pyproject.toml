@@ -5,7 +5,7 @@ description = ""
 authors = ["Nicky van Foreest <vanforeest@gmail.com>", "Niels Wouda <wouda@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "hydrogen_stations"}]
+packages = [{include = "stations"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
